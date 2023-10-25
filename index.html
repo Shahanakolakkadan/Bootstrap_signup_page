@@ -1,89 +1,172 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home/shahana/Bootstrap_signup_page/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="/home/shahana/Bootstrap_signup_page/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container-header">
-        <div class="header-image">
-            <img src="img/Grp.png" alt="Header">
-        </div>
-        <div class="header-txt">
-            <h6>Already registered? <a href="loginform.html">Login here</a></h6>
+        <div class="row">
+            <div class="col">
+                <div class="container-header-img">
+                    <img src="img/Grp.png" alt="Header">
+                </div>
+            </div>
+            <div class="col">
+                <div class="container-header-txt">
+                    Already registered?
+                    <a href="loginform.html">Login here</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-body">
         <div class="row">
             <div class="col-md-4">
-                <div class="sub-container-1">
-                    <h5>Basic details</h5>
-                </div>
-                <div class="sub-container-2">
-                    <h5>Varification center</h5>
-                </div>
+                <div class="container-side-bar">
+                    <div class="sub-side-bar-1">
+                        Basic Details
+                        <!-- <div class="container-arrow">
+                            <img src="img/arrow.png" alt="arrow">
+                        </div> -->
+                    </div>
+                    <div class="sub-side-bar-2">
+                        Verification Center
+                    </div>
+                    <div class="sub-side-bar">
+                        Professional Details
+                    </div>
+                    <div class="sub-side-bar">
+                        Employement Details
+                    </div>
+                    <div class="sub-side-bar">
+                        Job Preference
+                    </div>
+                </div> 
             </div>
             <div class="col-md-8">
-                <div class="sub-container-1">
-                    <h2>create account</h2>
-                </div>
-                <div class="button-container">
-                    <button class="btn-1">Facebook</button>
-                    <button class="btn-2">Google</button>
-                </div>
-                <!-- <div class="container-form"> -->
-                    <!-- <form action="process_form.php" method="POST">/ -->
-                        <div class="full-name">
-                            <h7>Fullname*</h7>
-                        </div>
-                        <div class="container-name">
-                            <label for="name"></label>
-                            <input type="text" placeholder="Enter Name" id="name" name="name" required><br>
-                        </div>
-                        <div class="email-id">
-                            <h7>Email ID*</h7>
+                <div class="container-signup-page">
+                    <div class="sub-signup-container-1">
+                        create an account
+                    </div>
+                    <div class="button-container">
+                        <div class="row">
+                            <div class="col-btn">
+                                <div class="row">
+                                    <div class="col-btn-img">
+                                        <img src="img/facebook.png" alt="Fb">
+                                    </div>
+                                    <div class="col-btn-txt">
+                                        Facebook
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-btn">
+                                <div class="row">
+                                    <div class="col-btn-img">
+                                        <img src="img/google.png" alt="Fb">
+                                    </div>
+                                    <div class="col-btn-txt">
+                                        Google
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="container-form-header">
+                            Full name*
+                    </div>
+                    <div class="container-form-name">
+                        <label for="name"></label>
+                        <input class="form-input" atype="text" placeholder="Enter your Full Name" id="name" name="name" required><br>
+                    </div>
+                        <div class="container-form-header-2">
+                            Email ID*
                         </div>
                         <div class="container-email-id">
                             <label for="email"></label>
-                            <input type="email" placeholder="Enter Email id" id="email" name="email" required><br>
+                            <input class="form-input" type="email" placeholder="Enter your Email ID" id="email" name="email" required><br>
                         </div>
-                        <div class="password">
-                            <h7>Password*</h7>
+                        <div class="container-form-header-2">
+                            Password*
                         </div>
                         <div class="container-password">
                             <label for="password"></label>
-                            <input type="password" placeholder="Enter NPassword" id="password" name="password" required><br>
+                            <input class="form-input" type="password" placeholder="Minimum 6 characters" id="password" name="password" required><br>
                         </div>
-                        <div class="mobile-no">
-                            <h7>Mobile Number*</h7>
+                        <div class="container-form-header-2">
+                            Mobile Number*
                         </div>
                         <div class="container-mobile-no">
                             <label for="Mobileno"></label>
-                            <input type="digit" placeholder="Enter Mobile no" id="mobileno" name="mobileno" required><br>
+                            <input class="form-input" type="digit" placeholder="Mobile Number" id="mobileno" name="mobileno" required><br>
                         </div>
-                        <div class="gender">
-                            <h7>Gender*</h7>
+                        <div class="container-form-header-2">
+                            Gender*
                         </div>
-                        <div class="col-md-6">
-                            <div class="female-radio">
-                                <label for="female">Female</label>
-                                <input type="radio" id="female" name="gender" value="female"><br>   
+                        <div class="container-radio-btn">
+                            <div class="row">
+                                <div class="col-3 radio-btn">
+                                    <label class="form-check-label text-nowrap" for="female">Female</label>
+                                    <input class="form-check-input" type="radio" id="female" name="gender" value="female"><br>   
+                                </div>
+                                <div class="col-1 radio-btn-1">
+                                    <label class="form-check-label text-nowrap" for="fmale">Male</label>
+                                    <input class="form-check-input" type="radio" id="male" name="gender" value="male"><br>   
+                                </div>
+                                <div class="col radio-btn-1">
+                                    <label class="form-check-label" for="not-say">Prefer not to say</label>
+                                    <input class="form-check-input" type="radio" id="not-say" name="gender" value="not-say"><br>   
+                                </div>
                             </div>
-                            <div class="male-radio">
-                                <label for="fmale">Male</label>
-                                <input type="radio" id="male" name="gender" value="male"><br>   
-                            </div>
-                            <div class="not-to-say-radio">
-                                <label for="not-say">Prefer not to say</label>
-                                <input type="radio" id="not-say" name="gender" value="not-say"><br>   
-                            </div>
-                            
                         </div>
-                        
-                
-                        <input type="submit" value="Submit">
-                    <!-- </form> -->
-                <!-- </div> -->
+                        <div class="container-form-header-2">
+                            Resume
+                        </div>
+                        <div class="container-form-file-upload">
+                            <div class="form-file-sub-container">
+                                <div class="form-file-txt">
+                                    upload resume
+                                </div>
+                                <!-- <input type="file" placeholder="uplaod resume" id="resume" name="resume" value="resume"><br>
+                                <label for="resume"></label> -->
+                            </div>   
+                        </div>
+                        <div class="container-form-sub-txt">
+                            Supported formats:doc,docx,rdf,pdf,upto 2 MB
+                        </div>
+                        <div class="container-form-contact-us">
+                            <!-- <div class="row"> -->
+                                <div class="form-check-box">
+                                    <label for="whatsapp"></label>
+                                        <input type="checkbox" id="whatsapp" name="whatsapp" value="whatsapp"> 
+                                </div>
+                                <div class="form-contact-us">
+                                    Contact via Whatsapp
+                                </div>
+                                <!-- <div class="whatsapp-img">
+                                    <img src="img/whatsapp.jpeg" alt="Whatsapp">
+                                </div> -->
+                                <!-- <div class="container-form-contact-us">
+                                    whatsapp
+                                </div> -->
+                            <!-- </div> -->  
+                        </div>
+                        <div class="container-form-condition">
+                                By registering you agree to our 
+                                <a href="terms and condition.html">terms and condition</a>
+                                &
+                                <a href="privacypolicy.html">privacy policy</a>
+                        </div>
+                        <div class="container-form-button">
+                            <div class="form-button-txt">
+                                Submit
+                            </div>
+                            <!-- <input type="submit" value="Submit"> -->
+                    </div>
+                </div>  
             </div>
         </div>
     </div>
