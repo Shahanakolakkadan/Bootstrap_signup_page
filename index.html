@@ -8,12 +8,12 @@
 <body>
     <div class="container-header">
         <div class="row">
-            <div class="col">
+            <div class="col-1">
                 <div class="container-header-img">
                     <img src="img/Grp.png" alt="Header">
                 </div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div class="container-header-txt">
                     Already registered?
                     <a href="loginform.html">Login here</a>
@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="container-body">
-        <div class="row">
+        <div class="row ">
             <div class="col-md-4">
                 <div class="container-side-bar">
                     <div class="sub-side-bar-1">
@@ -106,21 +106,22 @@
                         <div class="container-form-header-2">
                             Gender*
                         </div>
-                        <div class="container-radio-btn">
-                            <div class="row">
-                                <div class="col-3 radio-btn">
-                                    <label class="form-check-label text-nowrap" for="female">Female</label>
-                                    <input class="form-check-input" type="radio" id="female" name="gender" value="female"><br>   
-                                </div>
-                                <div class="col-1 radio-btn-1">
-                                    <label class="form-check-label text-nowrap" for="fmale">Male</label>
-                                    <input class="form-check-input" type="radio" id="male" name="gender" value="male"><br>   
-                                </div>
-                                <div class="col radio-btn-1">
-                                    <label class="form-check-label" for="not-say">Prefer not to say</label>
-                                    <input class="form-check-input" type="radio" id="not-say" name="gender" value="not-say"><br>   
-                                </div>
-                            </div>
+                        <div class="container-radio-btn p-3">
+                                <!-- <div class="col-3 radio-btn"> -->
+                                    <label class="form-check-label" for="female">
+                                    <input  type="radio" id="female" name="gender" value="female">
+                                    Female</label> 
+                                <!-- </div> -->
+                                <!-- <div class="col-1 radio-btn-1"> -->
+                                    <label class="form-check-label" for="fmale">
+                                    <input type="radio" id="male" name="gender" value="male">  
+                                    Male</label>
+                                <!-- </div> -->
+                                <!-- <div class="col radio-btn-1"> -->
+                                    <label class="form-check-label" for="not-say">
+                                    <input type="radio" id="not-say" name="gender" value="not-say">
+                                    Prefer not to say</label>  
+                                <!-- </div> -->
                         </div>
                         <div class="container-form-header-2">
                             Resume
@@ -138,21 +139,10 @@
                             Supported formats:doc,docx,rdf,pdf,upto 2 MB
                         </div>
                         <div class="container-form-contact-us">
-                            <!-- <div class="row"> -->
-                                <div class="form-check-box">
-                                    <label for="whatsapp"></label>
-                                        <input type="checkbox" id="whatsapp" name="whatsapp" value="whatsapp"> 
-                                </div>
-                                <div class="form-contact-us">
-                                    Contact via Whatsapp
-                                </div>
-                                <!-- <div class="whatsapp-img">
-                                    <img src="img/whatsapp.jpeg" alt="Whatsapp">
-                                </div> -->
-                                <!-- <div class="container-form-contact-us">
-                                    whatsapp
-                                </div> -->
-                            <!-- </div> -->  
+                                        <input type="checkbox" class="form-check-box"  name="whatsapp" value="whatsapp"> 
+                                        <label for="whatsapp">Contact via
+                                            <img id="whatsapp" src="img/whatsapp.png" alt="Whatsapp">whatsapp
+                                        </label>
                         </div>
                         <div class="container-form-condition">
                                 By registering you agree to our 
@@ -161,9 +151,9 @@
                                 <a href="privacypolicy.html">privacy policy</a>
                         </div>
                         <div class="container-form-button">
-                            <div class="form-button-txt">
-                                Submit
-                            </div>
+                            <button class="btn btn-txt">
+                                Continue
+                            </button>
                             
                             <!-- <input type="submit" value="Submit"> -->
                     </div>
